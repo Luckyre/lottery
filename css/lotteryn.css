@@ -1,0 +1,227 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+.wall-wrapper-context{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    top:0;
+    right:0;
+    left:0;
+    text-align: center;
+}
+.wall-wrapper-context .result-head{
+    background: url("../img/logo.png");
+    width: 165px;
+    height:45px;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+.wall-wrapper-context .result-prize{
+    margin: 0 auto;
+}
+.wall-wrapper-context .result-footer{
+    position: fixed;
+    bottom:0;
+    right:0;
+    min-height:350px;
+    width: 100%;
+    background: url("../img/result-wave.png") bottom center no-repeat;
+}
+.wall-wrapper-context .footer-god{
+    position: absolute;
+}
+.wall-wrapper-context .left-god{
+    left:0;
+    bottom:0;
+}
+.wall-wrapper-context .right-god{
+    right:0;
+    bottom:0;
+}
+.result {
+    height: 320px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+.result span {
+    display: inline-block;
+    font-size: 35px;
+    width: 408px;
+    height:50px;
+    line-height: 50px;
+    font-weight: bold;
+    font-family: "WenQuanYi Micro Hei";
+    color: #fff;
+    margin: 5px;
+    background: url("../img/number-display.png")   no-repeat;
+    background-size:100% 100%;
+    padding: 10px 0;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    border: none;
+}
+button {
+    overflow: visible;
+}
+button, select {
+    text-transform: none;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.pure-button {
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pure-button {
+    font-family: inherit;
+    font-size: 100%;
+    padding: .5em 1em;
+    color: #444;
+    color: rgba(0,0,0,.8);
+    border: 0 rgba(0,0,0,0);
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 2px;
+}
+.pure-button:focus {
+    outline: 0
+}
+.pure-button-hover, .pure-button:hover, .pure-button:focus {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(transparent),color-stop(40%,rgba(0,0,0,.05)),to(rgba(0,0,0,.1)));
+    background-image: -webkit-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+    background-image: -moz-linear-gradient(top,rgba(0,0,0,.05) 0,rgba(0,0,0,.1));
+    background-image: -o-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+    background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+}
+
+.button-success, .button-error, .button-warning, .button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button-success {
+    background: rgb(28, 184, 65);
+}
+.button-error {
+    background: rgb(202, 60, 60);
+}
+.button-warning {
+    background: rgb(223, 117, 20);
+}
+.button-secondary {
+    background: rgb(66, 184, 221);
+}
+.result-win-list{
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    text-align: center;
+    width: 440px;
+    color:#fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.result-win-list .win-title{
+    margin:30px 0;
+    font-size:30px;
+}
+.result-win-list .win-prize-item{
+    margin:0 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 0 0 110px;
+}
+.tools {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+}
+.tools .pize-select-wrapper{
+display: inline-block;
+}
+.pize-select-wrapper .pize-select{
+    height:40px;
+}
+.tools .pure-button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 0;
+    text-align: center;
+    width:50px;
+}
+.mask {
+    -webkit-filter:blur(5px);
+}
+#main {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+
+/*background music START*/
+.lottery-music{
+    position: fixed;
+    left:10px;
+    top:10px;
+    width:30px;
+    height:30px;
+}
+@keyframes mymove {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.lottery-music  .music-icon {
+font-size: 24px;
+transform-origin: center;
+animation: mymove 1s infinite;
+-webkit-animation: mymove 5s linear infinite; /*Safari and Chrome*/
+
+}
+.music-icon.pause {
+     animation-name: none;
+ }
+.music-icon .music-img {
+    border-radius: 50%;
+    width:35px;
+    height:35px;
+}
